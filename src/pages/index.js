@@ -12,10 +12,10 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 import { ArrowRight } from 'react-feather'
-import { CtaButton, HomeSection, Small, Title, Video, Wrapper, Slice, PartnerSection } from './styles'
+import { CtaButton, HomeSection, Small, Title, Video, Wrapper, Slice, PartnerSection } from '../styles/home'
 
 //
-import { about, labs, posts, equipments, events } from './data'
+import { about, labs, posts, equipments, events } from '../data'
 
 function Home() {
 
