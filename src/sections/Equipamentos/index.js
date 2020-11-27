@@ -16,7 +16,7 @@ function Equipamentos ({ data }) {
         <EquipmentsSection id="equipamentos">
             <Row>
                 <SectionTitle>Equipamentos</SectionTitle>
-                <LineButton>ver mais</LineButton>
+                <LineButton href="/equipamentos">ver mais</LineButton>
             </Row>
 
             <EquipmentRow>
@@ -26,7 +26,7 @@ function Equipamentos ({ data }) {
                             key={item.title}
                             title={item.title}
                             image={item.image}
-                            href="#"
+                            href={`/equipamentos`}
                         />
                     )) }
                 </Column>

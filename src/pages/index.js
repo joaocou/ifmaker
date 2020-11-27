@@ -23,6 +23,7 @@ function Home() {
         <div>
             <Head>
                 <title>IF Maker | O laboratório maker do IFMS</title>
+                <meta name="description" content="O IF Maker possibilita que pessoas da comunidade interna e externa dos campi do IFMS possam projetar e desenvolver suas ideias de forma criativa e cooperativa."/>
             </Head>
 
             <HomeSection>

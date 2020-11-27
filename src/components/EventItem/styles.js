@@ -4,7 +4,7 @@ export const Container = styled.div`
     width: 100%;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     > div:first-child {
         margin-right: 40px;
@@ -20,11 +20,6 @@ export const Row = styled.div`
     display: flex;
     align-items: center;
     margin-bottom: 5px;
-
-    @media (max-width: 800px) {
-        flex-direction: column;
-        align-items: flex-start;
-    }
 `
 
 export const Calendar = styled.div`
@@ -62,14 +57,15 @@ export const Item = styled.div`
 `
 
 export const Small = styled.span`
-    font-size: 14px;
+    font-size: 12px;
     color: #555;
     font-weight: 600;
-    margin-left: 10px;
+    margin-left: 6px;
     margin-right: 20px;
 `
 
 export const Title = styled.a`
+    text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: #111;

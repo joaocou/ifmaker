@@ -46,16 +46,16 @@ export const PostsRow = styled.div`
     overflow-x: auto;
     margin-top: 40px;
 
-    > div {
+    > a {
         margin: 10px 0;
         margin-right: 20px;
     }
 
-    > div:first-child {
+    > a:first-child {
         margin-left: 10%;
     }
 
-    > div:last-child {
+    > a:last-child {
         margin-right: 10%;
     }
 `

@@ -4,9 +4,27 @@ import ImageCarousel from '../../components/ImageCarousel'
 import LineButton from '../../components/LineButton'
 import Select from '../../components/Select';
 
-import { SectionTitle, LabSection, List, Item, SectionWrapper, TitleRow, Title, DetailsColumn, PersonList, PersonItem, PersonAvatar, PersonDetails, PersonName, PersonRole, Map, Row, Column } from './styles'
+import { 
+    SectionTitle, 
+    LabSection, 
+    List, 
+    Item, 
+    SectionWrapper, 
+    TitleRow, 
+    Title, 
+    DetailsColumn, 
+    PersonList, 
+    PersonItem, 
+    PersonAvatar, 
+    PersonDetails, 
+    PersonName, 
+    PersonRole, 
+    Map, 
+    Row, 
+    Column 
+} from './styles'
 
-function Labs({ data }) {
+export default function Labs({ data }) {
 
     const [currentLab, setCurrentLab] = useState(0);
 
@@ -18,7 +36,12 @@ function Labs({ data }) {
                 <List>
                     { data.length > 0 && data.map((lab, index) => (
                         <li key={index}>
-                            <Item active={index === currentLab} onClick={() => setCurrentLab(index)} >{lab.name}</Item>
+                            <Item 
+                                active={index === currentLab} 
+                                onClick={() => setCurrentLab(index)}
+                             >
+                                 {lab.name}
+                            </Item>
                         </li>
                     )) }
                 </List> 
@@ -44,14 +67,18 @@ function Labs({ data }) {
                 <DetailsColumn>
                     <TitleRow>
                         <Title>Campus {data[currentLab].name}</Title>
-                        <LineButton>ver mais</LineButton>
+                        <LineButton 
+                            href={`/laboratorio/${data[currentLab].slug}`}
+                        >
+                            ver mais
+                        </LineButton>
                     </TitleRow>
                     
                     <Row>
                         <PersonList>
                             { data.length > 0 && data[currentLab].team.map(person => (
                                 <PersonItem key={person.name}>
-                                    <PersonAvatar src={person.avatar} />
+                                    <PersonAvatar src={person.avatar} alt={person.name} />
                                     <PersonDetails>
                                         <PersonName>{person.name}</PersonName>
                                         <PersonRole>{person.role}</PersonRole>
@@ -60,7 +87,7 @@ function Labs({ data }) {
                             )) }
                         </PersonList>
 
-                        <Map src={data[currentLab].map} />
+                        <Map src={data[currentLab].map} alt="Mapa" />
                     </Row>
 
                 </DetailsColumn>
@@ -69,4 +96,3 @@ function Labs({ data }) {
     );
 }
 
-export default Labs

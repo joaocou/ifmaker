@@ -28,6 +28,10 @@ export const SectionWrapper = styled.div`
             display: block;
             width: 100%;
         }
+
+        select, div {
+            display: block;
+        }
     }
 `
 
@@ -64,6 +68,7 @@ export const Row = styled.div`
 
     @media (max-width: 800px) {
         flex-direction: column;
+        justify-content: flex-start;
     }
 `
 
@@ -88,12 +93,6 @@ export const DetailsColumn = styled.div`
     @media (max-width: 800px) {
         padding: 40px 10%;
         width: 100%;
-
-        div {
-            justify-content: flex-start;
-            align-items: flex-start;
-        }
-
     }
 `
 
@@ -113,9 +112,10 @@ export const Title = styled.h3`
 `
 
 export const PersonList = styled.div`
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 `
 
 export const PersonItem = styled.div`

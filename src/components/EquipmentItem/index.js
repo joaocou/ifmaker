@@ -2,17 +2,15 @@ import React from 'react'
 
 import { Container, Image, Square, Title } from './styles'
 
-function EquipmentItem ({ image, title, href, ...rest }) {
+function EquipmentItem ({ image, href, title, ...rest }) {
     return(
-        <a href={href} style={{ textDecoration: 'none' }}>
-            <Container {...rest}>
-                <Square>
-                    <Image src={image} alt={title} />
-                </Square>
+        <Container href="/equipamentos" {...rest}>
+            <Square>
+                <Image src={image} alt={title} />
+            </Square>
 
-                <Title>{title}</Title>
-            </Container>
-        </a>
+            <Title>{title}</Title>
+        </Container>
     );
 }
 

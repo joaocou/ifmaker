@@ -3,7 +3,7 @@ import React from 'react'
 import { User, Mail, Info } from 'react-feather'
 import { Container, Input, IconWrapper } from './styles'
 
-function MyInput ({ type, ...rest }) {
+function MyInput ({ iconType, ...rest }) {
 
     const icon = {
         user: <User size={20} color="#bbb" />,
@@ -13,11 +13,13 @@ function MyInput ({ type, ...rest }) {
 
     return(
         <Container>
-            <Input {...rest} />
-            <IconWrapper>
-                { icon[type] }
-            </IconWrapper>
+            <Input iconType={iconType} {...rest} />
 
+            { iconType && (
+                <IconWrapper>
+                    { icon[iconType] }
+                </IconWrapper>
+            ) }
         </Container>
     );
 }

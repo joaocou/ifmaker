@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.button`
-    height: 40px;   
+    height: 40px;  
+    padding: 0 30px;
     border-radius: 20px;
     padding: 12px 30px;
     text-transform: uppercase;
@@ -11,4 +12,8 @@ export const Container = styled.button`
     font-family: 'Open Sans', sans-serif; 
     border: 0;
     cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `

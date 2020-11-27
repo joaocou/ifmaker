@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ChevronDown, MapPin, Calendar, Map } from 'react-feather'
+import { ChevronDown, MapPin, Calendar, Map, Archive, Settings } from 'react-feather'
 import { Container, Select, ArrowWrapper, IconWrapper } from './styles'
 
 function MySelect ({ type, children, ...rest }) {
@@ -9,6 +9,8 @@ function MySelect ({ type, children, ...rest }) {
         pin: <MapPin size={20} color="#bbb" />,
         calendar: <Calendar size={20} color="#bbb" />,
         map: <Map size={20} color="#bbb" />,
+        archive: <Archive size={20} color="#bbb" />,
+        gear: <Settings size={20} color="#bbb" />,
     }
 
     return(

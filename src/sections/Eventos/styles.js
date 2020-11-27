@@ -3,43 +3,38 @@ import styled from 'styled-components'
 export const Row = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
+
+    div {
+        margin-right: 20px; 
+    }
+
+    div div:last-child {
+        margin-right: 0;
+    }
 
     @media (max-width: 800px) {
         flex-direction: column;
+
+        :last-child {
+            margin-bottom: 20px;
+        }
+        
+        select, input {
+            width: 100%;
+        }
+
+        div {
+            margin: 0;
+            width: 100%;
+            margin-bottom: 15px;
+        }
     }
 `
 
-export const FilterList = styled.div`
+export const FilterList = styled.form`
     display: flex;
     flex-direction: column;
     margin-bottom: 60px;
-
-    div select {
-        margin-right: 20px;
-    }
-
-    div div div {
-        right: 40px;
-    }  
-
-    @media (max-width: 800px) {
-        div {
-            flex: none;
-            width: 100%;   
-            margin-bottom: 15px;
-        }
-
-        div select {
-            width: 100%;
-            margin-right: 0;
-        }
-
-        div div div {
-            width: 20px;
-            right: 20px;
-        }  
-    } 
 `
 
 export const SectionTitle = styled.h2`
@@ -69,4 +64,39 @@ export const Label = styled.span`
     font-weight: 700;
     color: #555;
     margin-bottom: 20px;
+`
+
+export const InfoWrapper = styled.span`
+    display: flex;
+    justify-content: flex-start;
+    padding: 30px 0;
+
+    @media (max-width: 800px) {
+        justify-content: center;
+    }
+`
+
+export const Info = styled.span`
+    font-size: 16px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 20px;
+`
+
+export const Clear = styled.button`
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+    background: #fff;
+    border: 0;
+    font-weight: 600;
+    color: #555;
+    padding: 8px 20px;
+    padding-left: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 20px;
+
+    @media (max-width: 800px) {
+        margin: 0;
+    }
 `

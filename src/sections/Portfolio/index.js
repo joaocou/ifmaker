@@ -1,26 +1,30 @@
 import React from 'react';
 
 import LineButton from '../../components/LineButton'
-import PostCard from '../../components/PostCard'
+import PostItem from '../../components/PostItem'
 
 import { BlogSection, SectionTitle, Row, PostsRow } from './styles'
 
 function Portfolio ({ title, data, children, ...rest }) {
+
+    data.length = 4;
+
     return (
         <BlogSection id={title.replace(/ /g, '-').toLowerCase()} {...rest}>
             <Row>
                 <SectionTitle>{title}</SectionTitle>
-                <LineButton>ver mais</LineButton>
+                <LineButton href="/portfolio">ver mais</LineButton>
             </Row>
 
             { children && <Row>{children}</Row> }
 
             <PostsRow>
                 { data.length > 0 && data.map(post => (
-                    <PostCard 
+                    <PostItem 
                         key={post.title}
                         title={post.title}
                         image={post.image}
+                        href={`/artigo/${post.slug}`}
                     />
                 )) }
             </PostsRow>

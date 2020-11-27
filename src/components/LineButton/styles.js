@@ -7,6 +7,7 @@ export const Container = styled.button`
     background: none;
     color: ${props => props.theme.colors.primary};
     border: 0;
+    text-decoration: none;
     cursor: pointer;
 `
 

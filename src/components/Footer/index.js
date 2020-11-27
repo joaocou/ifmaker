@@ -22,6 +22,7 @@ function Footer() {
                         <Item><a href="/#equipamentos">Equipamentos</a></Item>
                         <Item><a href="/agendamento">Agendamento</a></Item>
                         <Item><a href="/#contato">Contato</a></Item>
+                        <Item><a href="/login">Login</a></Item>
                     </List>
                 </Section>
 

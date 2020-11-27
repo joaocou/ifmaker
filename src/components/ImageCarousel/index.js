@@ -31,7 +31,7 @@ function ImageCarousel({ data }) {
                 )) }
             </Items>
             
-            <IconWrapper onClick={handleNext}>
+            <IconWrapper onClick={handleNext} name="Próximo">
                 <ChevronRight size={60} color="#fff" />
             </IconWrapper>
 

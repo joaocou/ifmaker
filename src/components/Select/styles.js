@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: auto;
+    width: 220px;
     height: 40px;
     position: relative;
 `
@@ -37,7 +37,8 @@ export const ArrowWrapper = styled.div`
     top: 10px;
     right: 22px;
     pointer-events: none;
-    width: 20px;
+    max-width: 20px;
+    background: #fff;
 `
 
 export const IconWrapper = styled.div`

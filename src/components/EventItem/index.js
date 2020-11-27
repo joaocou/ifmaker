@@ -4,15 +4,15 @@ import { Clock, MapPin } from 'react-feather'
 
 import { Container, Column, Calendar, Month, Day, Year, Small, Row, Item, Title, Excerpt } from './styles'
 
-function EventItem ({ date, time, place, title, content, href, ...rest }) {
+function EventItem ({ date, time, city, title, content, href, ...rest }) {
     
-    date = date.split('/');
+    date = date.split('-');
 
     const months = ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez']
 
-    const day = date[0];
+    const day = date[2];
     const month = months[date[1] - 1];
-    const year = date[2];
+    const year = date[0];
 
     return(
         <Container {...rest}>
@@ -27,13 +27,13 @@ function EventItem ({ date, time, place, title, content, href, ...rest }) {
             <Column>
                 <Row>
                     <Item>
-                        <Clock size={14} color="#555" />
+                        <Clock size={12} color="#555" />
                         <Small>{time}</Small>
                     </Item>
 
                     <Item>
-                        <MapPin size={14} color="#555" />
-                        <Small>{place}</Small>
+                        <MapPin size={12} color="#555" />
+                        <Small>{city}</Small>
                     </Item>
                 </Row>
 

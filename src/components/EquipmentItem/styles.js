@@ -1,11 +1,12 @@
 import styled from 'styled-components'
 
-export const Container = styled.div`
+export const Container = styled.a`
     width: 100%;
     display: flex;
     align-items: center;
     position: relative;
     padding: 20px;
+    text-decoration: none;
 `
 
 export const Square = styled.div`

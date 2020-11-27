@@ -30,4 +30,8 @@ export const GlobalStyle = createGlobalStyle`
     button:hover {
         opacity: 0.6;
     }
+
+    img {
+        border-radius: 4px;
+    }
 `;

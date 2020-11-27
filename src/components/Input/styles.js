@@ -16,7 +16,7 @@ export const Input = styled.input`
     background: #fff;
     border: 2px solid #ddd;
     padding: 8px 20px;
-    padding-left: 60px;
+    padding-left: ${props => props.iconType ? '60px' : '20px'};
     border-radius: 4px;
 `
 

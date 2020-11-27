@@ -10,7 +10,7 @@ export const Container = styled.div`
     position: relative;
     height: 240px;
     width: 250px;
-    background: #111;
+    background: #000;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
     cursor: pointer;

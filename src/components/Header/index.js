@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'react-feather'
+import Link from 'next/link'
 
 import { Container, Logo, List, Item, IconLink } from './styles'
 
