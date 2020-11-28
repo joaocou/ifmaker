@@ -10,7 +10,7 @@ export const Title = styled.h1`
     margin-bottom: 40px;
 
     @media (max-width: 800px) {
-        font-size: 30px;
+        font-size: 40px;
     }
 `
 
@@ -88,7 +88,7 @@ export const EquipmentList = styled.div`
     display: flex;
     flex-direction: column;
 
-    margin-top: 100px;
+    margin-top: 80px;
 `
 
 export const InfoWrapper = styled.span`

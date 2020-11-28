@@ -5,7 +5,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 import { ArrowRight } from 'react-feather'
-import { Container, Map, Title, Label, AgendamentoSection, Text, CtaButton } from './styles';
+import { Container, Map, Title, Label, AgendamentoSection, Text, CtaButton } from '../../styles/pages/laboratorio';
 
 import Equipe from '../../sections/Equipe'
 import Portfolio from '../../sections/PortfolioSmall';

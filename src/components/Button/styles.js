@@ -7,7 +7,7 @@ export const Container = styled.button`
     padding: 12px 30px;
     text-transform: uppercase;
     background: ${props => props.theme.colors.primary};
-    color: ${props => props.theme.colors.primaryLight};
+    color: #fff;
     font-weight: 700;      
     font-family: 'Open Sans', sans-serif; 
     border: 0;
@@ -16,4 +16,10 @@ export const Container = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    outline: 0;
+
+    :focus {
+        box-shadow: 0 0 0px 3px rgba(0,0,0,0.1);
+    }
 `

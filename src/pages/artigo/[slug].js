@@ -5,8 +5,20 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 import ReactMd from 'react-markdown'
-import { Facebook, Instagram, Twitter, Linkedin } from 'react-feather'
-import { Container, SectionName, Title, Subtitle, ImageWrapper, Image, Row, Column, SocialButton, SocialRow, Content } from './styles';
+import { IconBrandFacebook, IconBrandInstagram, IconBrandLinkedin, IconBrandTwitter } from 'tabler-icons'
+import { 
+    Container, 
+    SectionName, 
+    Title, 
+    Subtitle, 
+    ImageWrapper, 
+    Image, 
+    Row, 
+    Column, 
+    SocialButton, 
+    SocialRow, 
+    Content 
+} from '../../styles/pages/artigo';
 
 //
 import { posts } from '../../data'
@@ -35,19 +47,19 @@ export default function Artigo ({ slug }) {
 
                         <SocialRow>
                             <SocialButton>
-                                <Facebook size={24} color="#111" />
+                                <IconBrandFacebook size={24} color="#111" />
                             </SocialButton>
 
                             <SocialButton>
-                                <Instagram size={24} color="#111" />
+                                <IconBrandInstagram size={24} color="#111" />
                             </SocialButton>
 
                             <SocialButton>
-                                <Twitter size={24} color="#111" />
+                                <IconBrandTwitter size={24} color="#111" />
                             </SocialButton>
 
                             <SocialButton>
-                                <Linkedin size={24} color="#111" />
+                                <IconBrandLinkedin size={24} color="#111" />
                             </SocialButton>
                         </SocialRow>
                     </Column>

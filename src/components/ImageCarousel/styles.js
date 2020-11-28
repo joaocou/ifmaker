@@ -4,7 +4,7 @@ export const Container = styled.div`
     height: 350px;
     width: 100%;
     position: relative;
-    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -52,6 +52,14 @@ export const IconWrapper = styled.button`
     top: 145px;
     background: none;
     border: 0;
+
+    outline: 0;
+
+    outline: 0;
+
+    :focus {
+        box-shadow: 0 0 0px 3px rgba(255,255,255,0.1);
+    }
 
     svg {
         cursor: pointer;

@@ -51,6 +51,7 @@ export const PersonAvatar = styled.img`
     border-radius: 25px;
     margin-right: 20px;
     background: #ddd;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 `
 
 export const PersonName = styled.h4`

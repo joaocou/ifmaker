@@ -26,7 +26,7 @@ export const Card = styled.div`
     margin: 20px 0;
     background: #fff;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 
     transition: 0.5s ease-in-out;
 

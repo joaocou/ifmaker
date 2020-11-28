@@ -37,7 +37,7 @@ export const Small = styled.span`
 export const Title = styled.h1`
     font-family: 'Poppins', sans-serif;
     font-size: 60px;
-    line-height: 65px;
+    line-height: 70px;
     width: 480px;
     color: #fff;
     margin-bottom: 40px;
@@ -62,9 +62,9 @@ export const CtaButton = styled.button`
     border-radius: 30px;
     padding: 0 40px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    cursor: pointer;
     z-index: 1;
     outline: 0;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;

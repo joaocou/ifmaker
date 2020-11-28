@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    padding: 120px 10%;
+    padding: 80px 10%;
 `
 
 export const Row = styled.div`
@@ -65,7 +65,7 @@ export const ImageWrapper = styled.div`
     height: 320px;
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 `
 
 export const Image = styled.img`

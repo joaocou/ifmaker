@@ -13,11 +13,17 @@ export const Input = styled.input`
     width: 100%;
     font-family: 'Open Sans', sans-serif;
     height: 40px;
-    background: #fff;
-    border: 2px solid #ddd;
+    border: 1px solid #bbb;
+    background: #fafafa;
+    border-radius: 4px;
     padding: 8px 20px;
     padding-left: ${props => props.iconType ? '60px' : '20px'};
-    border-radius: 4px;
+
+    outline: 0;
+
+    :focus {
+        box-shadow: 0 0 0px 3px rgba(0,0,0,0.1);
+    }
 `
 
 export const IconWrapper = styled.div`

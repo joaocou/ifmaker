@@ -18,25 +18,23 @@ import {
     Clear,
     InfoWrapper,
     Info
-} from './styles';
+} from '../../styles/pages/equipamentos';
 
 //
 import { equipments } from '../../data'
-const theEquipments = equipments;
+const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
+const data = equipments;
+//
 
 function Equipamentos () {
 
-    const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
-
-    //
-
-    const [equipments, setEquipments] = useState(theEquipments);
+    const [equipments, setEquipments] = useState(data);
 
     const [category, setCategory] = useState(null);
     const [campus, setCampus] = useState(null);
 
     useEffect(() => {
-        const filteredEquipments = equipments.filter(equipment => 
+        const filteredEquipments = data.filter(equipment => 
             (!campus || campus === equipment.campus) && (!category || category === equipment.category)
         );
 
@@ -44,7 +42,7 @@ function Equipamentos () {
     }, [campus, category]);
 
 
-    const hanldeClear = () => {
+    const handleClear = () => {
         setCategory(null);
         setCampus(null);
 
@@ -55,7 +53,7 @@ function Equipamentos () {
         <div>
             <Head>
                 <title>Equipamentos | IF Maker</title>
-                <meta name="description" content="Gostaria de agendar o uso de algum deles? Clique no botão de [+] para exibir mais informações e ver opções de agendamento."/>
+                <meta name="description" content="Os nossos equipamentos que estão espalhados nas dez unidades do IF Maker."/>
             </Head>
 
             <Header />
@@ -85,7 +83,7 @@ function Equipamentos () {
                             </Select>
 
                             <Select 
-                                type="map"
+                                type="campus"
                                 value={campus}
                                 onChange={(e) => setCampus(e.target.value)}
                             >
@@ -98,7 +96,7 @@ function Equipamentos () {
                             </Select>
 
                             { (campus || category) && (
-                                <Clear name="limpar_filtros" onClick={hanldeClear}>Limpar filtros</Clear>
+                                <Clear name="limpar_filtros" onClick={handleClear}>Limpar filtros</Clear>
                             ) } 
                         </FilterRow>
                     </Section>

@@ -4,13 +4,13 @@ import Select from '../../components/Select'
 import EventItem from '../../components/EventItem'
 import DateInput from '../../components/DateInput';
 
-import { EventSection, SectionTitle, Row, Column, FilterList, Label, Date, InfoWrapper, Info, Clear } from './styles'
+import { EventSection, SectionTitle, Row, Column, FilterList, Label, InfoWrapper, Info, Clear } from './styles'
+
+
+const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
+//
 
 function Eventos ({ data }) {
-
-    const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
-
-    //
 
     const [events, setEvents] = useState(data);
     
@@ -57,7 +57,7 @@ function Eventos ({ data }) {
                     />
 
                     <Select 
-                        type="map"
+                        type="campus"
                         value={campus}
                         onChange={(e) => setCampus(e.target.value)}
                     >

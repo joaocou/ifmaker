@@ -14,9 +14,15 @@ export const Input = styled.textarea`
     min-height: 160px;
     font-family: 'Open Sans', sans-serif;
     height: 40px;
-    background: #fff;
-    border: 2px solid #ddd;
+    background: #fafafa;
+    border: 1px solid #bbb;
     padding: 8px 20px;
     border-radius: 8px;
     resize: none;
+
+    outline: 0;
+
+    :focus {
+        box-shadow: 0 0 0px 3px rgba(0,0,0,0.1);
+    }
 `

@@ -47,7 +47,7 @@ export default function Labs({ data }) {
                 </List> 
 
                 <Select 
-                    type="pin"
+                    type="campus"
                     value={currentLab} 
                     onChange={(e) => setCurrentLab(e.target.value)}
                 >

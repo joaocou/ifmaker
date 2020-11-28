@@ -2,9 +2,9 @@ import React from 'react'
 
 import { Container, Image, Square, Title } from './styles'
 
-function EquipmentItem ({ image, href, title, ...rest }) {
+function EquipmentItem ({ image, title, ...rest }) {
     return(
-        <Container href="/equipamentos" {...rest}>
+        <Container {...rest}>
             <Square>
                 <Image src={image} alt={title} />
             </Square>

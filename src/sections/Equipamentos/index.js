@@ -26,7 +26,7 @@ function Equipamentos ({ data }) {
                             key={item.title}
                             title={item.title}
                             image={item.image}
-                            href={`/equipamentos`}
+                            href={`/equipamentos/#${item.title.replace(/ /g, '-').toLowerCase()}`}
                         />
                     )) }
                 </Column>
@@ -37,7 +37,7 @@ function Equipamentos ({ data }) {
                             key={item.title}
                             title={item.title}
                             image={item.image}
-                            href="#"
+                            href={`/equipamentos/#${item.title.replace(/ /g, '-').toLowerCase()}`}
                         />
                     )) }
                 </Column>

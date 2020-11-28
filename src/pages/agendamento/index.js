@@ -11,9 +11,22 @@ import Button from '../../components/Button'
 import ButtonSecondary from '../../components/ButtonSecondary'
 import CheckBox from '../../components/CheckBox'
 
-import { Container, Title, Subtitle, Row, Column, Divider, Form, InputGroup, Label, CalendarInfo, FormRow, Box } from './styles';
+import { 
+    Container, 
+    Title, 
+    Subtitle, 
+    Row, 
+    Column, 
+    Divider, 
+    Form, 
+    InputGroup, 
+    Label, 
+    CalendarInfo, 
+    FormRow, 
+    Box 
+} from '../../styles/pages/agendamento';
 
-function Agendamento ({ props }) {
+export default function Agendamento () {
 
     const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
 
@@ -54,6 +67,9 @@ function Agendamento ({ props }) {
                             <InputGroup>
                                 <Label>Equipamento</Label>
                                 <Input type="text" name="equipment" placeholder="Pesquisar" />
+                                <CalendarInfo>
+                                    
+                                </CalendarInfo>
                             </InputGroup>
 
                             <InputGroup>
@@ -97,5 +113,3 @@ function Agendamento ({ props }) {
         </div>
     );
 }
-
-export default Agendamento

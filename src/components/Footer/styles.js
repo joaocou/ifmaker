@@ -5,6 +5,7 @@ export const Container = styled.header`
     padding: 60px 8%;
     background: #111;
     color: #777;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 `
 
 export const Line = styled.div`

@@ -18,14 +18,9 @@ export const Row = styled.div`
         :last-child {
             margin-bottom: 20px;
         }
-        
-        select, input {
-            width: 100%;
-        }
 
-        div {
+        > div {
             margin: 0;
-            width: 100%;
             margin-bottom: 15px;
         }
     }
@@ -95,6 +90,12 @@ export const Clear = styled.button`
     border-radius: 4px;
     cursor: pointer;
     margin-right: 20px;
+
+    outline: 0;
+
+    :focus {
+        box-shadow: 0 0 0px 3px rgba(0,0,0,0.1);
+    }
 
     @media (max-width: 800px) {
         margin: 0;

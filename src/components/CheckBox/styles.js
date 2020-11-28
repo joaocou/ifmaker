@@ -9,7 +9,7 @@ export const Container = styled.div`
 
 export const Input = styled.input`
     background: #fafafa;
-    border: 2px solid #bbb;
+    border: 1px solid #bbb;
     height: 20px;
     width: 20px;
     border-radius: 8px;

@@ -29,7 +29,7 @@ function Footer() {
                 <Section>
                     <h3>Blog</h3>
                     <List>
-                        <Item><a href="/#portfólio">Portfólio</a></Item>
+                        <Item><a href="/#portfolio">Portfólio</a></Item>
                         <Item><a href="/#eventos">Eventos</a></Item>
                     </List>
                 </Section>

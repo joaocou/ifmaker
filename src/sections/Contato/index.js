@@ -19,21 +19,21 @@ function Contato () {
                             type="text" 
                             name="name" 
                             placeholder="Nome" 
-                            typeIcon="user" 
+                            iconType="user" 
                             required
                         />
                         <Input 
                             type="email" 
                             name="email" 
                             placeholder="Email" 
-                            typeIcon="mail" 
+                            iconType="mail" 
                             required
                         />
                         <Input 
                             type="text" 
                             name="subject" 
                             placeholder="Assunto" 
-                            typeIcon="info" 
+                            iconType="info" 
                             required
                         />
                     </Column>

@@ -5,7 +5,7 @@ export const Container = styled.header`
     width: 100%;
     padding: 0px 8%;
     background: ${props => props.transparent ? 'transparent' : '#fafafa'};
-    border-bottom: ${props => props.transparent ? 0 : '1px solid #ddd'};
+    box-shadow: ${props => props.transparent ? 'none' : '0 0 4px rgba(0,0,0,0.2)'};
     overflow-x: auto;
 
     display: flex;
@@ -53,7 +53,7 @@ export const Item = styled.li`
     a {
         font-size: 14px;
         font-weight: 600;
-        color: ${props => props.transparent ? '#fff' : '#111'};
+        color: ${props => props.transparent ? '#fff' : '#555'};
         text-decoration: none;
         text-transform: uppercase;
         padding: 10px 15px;

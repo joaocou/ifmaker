@@ -13,8 +13,8 @@ function EquipmentItem ({ content, image, title, href, ...rest }) {
     const toggleContent = () => open ? setOpen(false) : setOpen(true);
 
     return(
-        <Container {...rest}>
-            <Header >
+        <Container {...rest} id={title.replace(/ /g, '-').toLowerCase()}>
+            <Header>
                 <Square>
                     <Image src={image} alt={title} />
                 </Square>
@@ -31,7 +31,7 @@ function EquipmentItem ({ content, image, title, href, ...rest }) {
                     {content}
                 </ReactMd>
 
-                <Button href="/agendamento">Agendar uso do equipamento</Button>
+                <Button href="/agendamento">Agendar uso</Button>
             </Content>
         </Container>
     );

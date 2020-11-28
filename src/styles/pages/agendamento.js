@@ -10,7 +10,7 @@ export const Title = styled.h1`
     margin-bottom: 40px;
 
     @media (max-width: 800px) {
-        font-size: 30px;
+        font-size: 40px;
     }
 `
 
@@ -50,7 +50,7 @@ export const Column = styled.div`
 export const Divider = styled.div`
     width: 100;
     background: #ddd;
-    height: 2px;
+    height: 1px;
     margin: 60px 0;
 `
 

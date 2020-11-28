@@ -10,18 +10,22 @@ export const Input = styled.input`
     font-family: 'Open Sans', sans-serif;
     height: 40px;
     width: 200px;
-    background: #fff;
-    border: 2px solid #ddd;
+    background: #fafafa;
+    border: 1px solid #bbb;
     border-radius: 4px;
     padding: 8px 20px;
     padding-left: 20px;
     cursor: pointer;
 
+    outline: 0;
+
+    :focus {
+        box-shadow: 0 0 0px 3px rgba(0,0,0,0.1);
+    }
+
     @media (max-width: 800px) {
         width: 100%;
         margin: 0;
-        margin-bottom: 20px;
-
         appearance: none;
         padding-left: 60px;
         padding-right: 60px;

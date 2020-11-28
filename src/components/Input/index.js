@@ -1,16 +1,16 @@
 import React from 'react'
 
-import { User, Mail, Info } from 'react-feather'
+import { IconUser, IconMail, IconInfoCircle } from 'tabler-icons'
 import { Container, Input, IconWrapper } from './styles'
 
 function MyInput ({ iconType, ...rest }) {
 
     const icon = {
-        user: <User size={20} color="#bbb" />,
-        mail: <Mail size={20} color="#bbb" />,
-        info: <Info size={20} color="#bbb" />,
+        user: <IconUser size={20} color="#aaa" />,
+        mail: <IconMail size={20} color="#aaa" />,
+        info: <IconInfoCircle size={20} color="#aaa" />,
     }
-
+    
     return(
         <Container>
             <Input iconType={iconType} {...rest} />

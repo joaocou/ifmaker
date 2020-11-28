@@ -6,6 +6,10 @@ export const Form = styled.form`
     flex-direction: column;
     align-items: center;    
 
+    input, textarea {
+        background: #fff;
+    }
+
     div > div:last-child {
         margin: 0;
     }

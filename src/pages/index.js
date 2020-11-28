@@ -12,12 +12,13 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 
 import { ArrowRight } from 'react-feather'
-import { CtaButton, HomeSection, Small, Title, Video, Wrapper, Slice, PartnerSection } from '../styles/home'
+import { CtaButton, HomeSection, Small, Title, Video, Wrapper, Slice, PartnerSection } from '../styles/pages/inicio'
 
 //
 import { about, labs, posts, equipments, events } from '../data'
+//
 
-function Home() {
+export default function Home() {
 
     return(
         <div>
@@ -30,7 +31,7 @@ function Home() {
                 <Header transparent />
 
                 <Wrapper>
-                    <Small>Conheça</Small>
+                    <Small>CONHEÇA</Small>
                     <Title>O laboratório maker do IFMS.</Title>
                     <CtaButton>
                         Assistir ao vídeo
@@ -75,5 +76,3 @@ function Home() {
         </div>
     );
 }
-
-export default Home

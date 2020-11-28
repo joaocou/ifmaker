@@ -50,7 +50,7 @@ export const Title = styled.h3`
 
     @media (max-width: 800px) {
         width: 60%;
-        font-size: 16px;
+        font-size: 14px;
         margin-left: 40px;
     }
 `
@@ -87,6 +87,7 @@ export const Content = styled.div`
     
     padding-left: 160px;
     background: #fafafa;
+    font-size: 14px;
 
     display: ${props => props.open ? 'block' : 'none'};
 
@@ -109,7 +110,7 @@ export const Content = styled.div`
     }
 
     a button {
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     @media (max-width: 800px) {

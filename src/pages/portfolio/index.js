@@ -7,21 +7,17 @@ import Select from  '../../components/Select'
 import SearchInput from  '../../components/SearchInput'
 import PostItem from '../../components/PostItem'
 
-import { Container, Title, Label, FilterContainer, FilterRow, Section, PostGrid, Clear, InfoWrapper, Info } from './styles';
+import { Container, Title, Label, FilterContainer, FilterRow, Section, PostGrid, Clear, InfoWrapper, Info } from '../../styles/pages/portfolio';
 
 //
 import { posts } from '../../data'
+const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
+const categories = ["Microcontroladores", "Robótica", "Design", "Impressão 3D"];
+const data = posts;
+//
 
-const thePosts = posts;
 
-function Galeria ({ props }) {
-
-    const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
-    const categories = ["Microcontroladores", "Robótica", "Design", "Impressão 3D"];
-
-    const data = thePosts;
-
-    //
+function Galeria () {
 
     const [posts, setPosts] = useState(data);
     
@@ -77,7 +73,7 @@ function Galeria ({ props }) {
                             </Select>
 
                             <Select 
-                                type="map"
+                                type="campus"
                                 value={campus}
                                 onChange={(e) => setCampus(e.target.value)}
                             >
@@ -105,9 +101,9 @@ function Galeria ({ props }) {
                     { posts.length > 0 ? posts.map(post => (
                         <PostItem 
                             key={post.title}
-                            slug={post.slug}
                             title={post.title}
                             image={post.image}
+                            href={`/artigo/${post.slug}`}
                         />
                     )) : (
                         <InfoWrapper>
