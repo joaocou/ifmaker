@@ -19,7 +19,7 @@ function Footer() {
                 <Section>
                     <h3>Serviços</h3>
                     <List>
-                        <Item><a href="/#equipamentos">Equipamentos</a></Item>
+                        <Item><a href="/equipamentos">Equipamentos</a></Item>
                         <Item><a href="/agendamento">Agendamento</a></Item>
                         <Item><a href="/#contato">Contato</a></Item>
                         <Item><a href="/login">Login</a></Item>
@@ -29,7 +29,7 @@ function Footer() {
                 <Section>
                     <h3>Blog</h3>
                     <List>
-                        <Item><a href="/#portfolio">Portfólio</a></Item>
+                        <Item><a href="/portfólio">Portfólio</a></Item>
                         <Item><a href="/#eventos">Eventos</a></Item>
                     </List>
                 </Section>

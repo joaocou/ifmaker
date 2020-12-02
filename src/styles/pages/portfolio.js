@@ -141,3 +141,10 @@ export const Info = styled.span`
     color: #555;
     margin-bottom: 20px;
 `
+
+export const LoadingWrapper = styled.div`
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`

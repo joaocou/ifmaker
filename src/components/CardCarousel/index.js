@@ -34,7 +34,7 @@ function CardCarousel({ data }) {
                         key={item.title} 
                         onClick={() => handleNavigate(index)}
                         active={index === (transform / -100)}
-                        name="Ponto"
+                        name={`Navegar para ${index}`}
                     />
                 )) }
             </Row>

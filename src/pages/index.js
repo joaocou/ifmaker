@@ -31,7 +31,7 @@ export default function Home() {
                 <Header transparent />
 
                 <Wrapper>
-                    <Small>CONHEÇA</Small>
+                    <Small>Conheça</Small>
                     <Title>O laboratório maker do IFMS.</Title>
                     <CtaButton>
                         Assistir ao vídeo

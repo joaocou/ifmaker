@@ -17,7 +17,7 @@ export const Container = styled.a`
     cursor: pointer;
 
     :hover {
-        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        box-shadow: 0 0 10px rgba(0,0,0,0.6);
         opacity: 1;
     }
 `

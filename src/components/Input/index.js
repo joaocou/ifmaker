@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { IconUser, IconMail, IconInfoCircle } from 'tabler-icons'
+import { IconUser, IconMail, IconInfoCircle, IconLock } from 'tabler-icons'
 import { Container, Input, IconWrapper } from './styles'
 
 function MyInput ({ iconType, ...rest }) {
@@ -9,6 +9,7 @@ function MyInput ({ iconType, ...rest }) {
         user: <IconUser size={20} color="#aaa" />,
         mail: <IconMail size={20} color="#aaa" />,
         info: <IconInfoCircle size={20} color="#aaa" />,
+        lock: <IconLock size={20} color="#aaa" />,
     }
     
     return(

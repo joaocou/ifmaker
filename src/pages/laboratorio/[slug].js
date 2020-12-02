@@ -5,7 +5,7 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 
 import { ArrowRight } from 'react-feather'
-import { Container, Map, Title, Label, AgendamentoSection, Text, CtaButton } from '../../styles/pages/laboratorio';
+import { MainWrapper, Container, Map, Title, Label, AgendamentoSection, Text, CtaButton, BackImage } from '../../styles/pages/laboratorio';
 
 import Equipe from '../../sections/Equipe'
 import Portfolio from '../../sections/PortfolioSmall';
@@ -28,15 +28,18 @@ export default function Laboratorio ({ slug }) {
                 <meta name="description" content="O que fazemos, o nosso portfólio!"/>
             </Head>
 
-            <Header />
+            <MainWrapper>
+                <Header transparent={true} />
 
-            <Container>
-                <Map src={data.map} alt="Mapa" />
+                <Container>
+                    <Map src={data.map} alt="Mapa" />
 
-                <Label>Laboratório</Label>
-                <Title>Campus<br />{data.name}</Title>
+                    <Label>Laboratório</Label>
+                    <Title>Campus<br />{data.name}</Title>
+                </Container>
 
-            </Container>
+                <BackImage src={data.images[0].url} alt={data.images[0].alt} />
+            </MainWrapper>
 
             <Equipe data={data.team} />
 

@@ -6,7 +6,6 @@ export const Container = styled.header`
     padding: 0px 8%;
     background: ${props => props.transparent ? 'transparent' : '#fafafa'};
     box-shadow: ${props => props.transparent ? 'none' : '0 0 4px rgba(0,0,0,0.2)'};
-    overflow-x: auto;
 
     display: flex;
     align-items: center;
@@ -32,7 +31,7 @@ export const List = styled.ul`
     align-items: center;
     justify-content: space-between;
 
-    @media (max-width: 800px) { 
+    @media (max-width: 1000px) { 
         position: absolute;
         width: 90%;
         height: auto;
@@ -41,7 +40,7 @@ export const List = styled.ul`
         background: #111;
         border-radius: 20px;
         padding: 40px 0;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        box-shadow: 0 0 4px rgba(0,0,0,0.5);
         z-index: 2;
 
         flex-direction: column;
@@ -59,7 +58,7 @@ export const Item = styled.li`
         padding: 10px 15px;
     }
 
-    @media (max-width: 800px) { 
+    @media (max-width: 1000px) { 
         a {
             font-size: 18px;
             color: #fff;
@@ -72,7 +71,7 @@ export const IconLink = styled.span`
     display: none;  
     cursor: pointer;
 
-    @media (max-width: 800px) { 
+    @media (max-width: 1000px) { 
         display: block; 
     }
 `

@@ -12,6 +12,7 @@ function ImageCarousel({ data }) {
 
         if(currentPage < data.length) {
             setTransform(transform - 100);
+            
         } else {
             setTransform(0);
         }
@@ -31,7 +32,7 @@ function ImageCarousel({ data }) {
                 )) }
             </Items>
             
-            <IconWrapper onClick={handleNext} name="Próximo">
+            <IconWrapper onClick={handleNext} name="Próximo slide">
                 <ChevronRight size={60} color="#fff" />
             </IconWrapper>
 

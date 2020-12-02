@@ -1,16 +1,30 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 
-import Header from '../../components/Header'
-import Footer from '../../components/Footer'
-import Select from  '../../components/Select'
-import SearchInput from  '../../components/SearchInput'
-import PostItem from '../../components/PostItem'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import Select from  '../components/Select'
+import SearchInput from  '../components/SearchInput'
+import PostItem from '../components/PostItem'
 
-import { Container, Title, Label, FilterContainer, FilterRow, Section, PostGrid, Clear, InfoWrapper, Info } from '../../styles/pages/portfolio';
+import { Puff } from '@agney/react-loading';
+
+import { 
+    Container, 
+    Title, 
+    Label, 
+    FilterContainer, 
+    FilterRow, 
+    Section, 
+    PostGrid, 
+    Clear, 
+    InfoWrapper, 
+    Info,
+    LoadingWrapper
+} from '../styles/pages/portfolio';
 
 //
-import { posts } from '../../data'
+import { posts } from '../data'
 const campi = ["Aquidauana", "Campo Grande", "Corumbá", "Coxim", "Dourados", "Jardim", "Naviraí", "Nova Andradina", "Ponta Porã", "Três Lagoas"];
 const categories = ["Microcontroladores", "Robótica", "Design", "Impressão 3D"];
 const data = posts;
@@ -111,6 +125,10 @@ function Galeria () {
                         </InfoWrapper>
                     ) }
                 </PostGrid>
+
+                <LoadingWrapper>
+                    <Puff width="50" />
+                </LoadingWrapper>
 
             </Container>
 

@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    padding: 20px 10%;
-    padding-bottom: 60px;
+    padding: 60px 10%;
+    background: #fff;
 `
 
 export const Title = styled.div`

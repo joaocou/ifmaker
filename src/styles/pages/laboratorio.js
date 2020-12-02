@@ -1,13 +1,28 @@
 import styled from 'styled-components'
 
+export const BackImage = styled.img`
+    width: 100%;
+    height: 542px;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+`
+
+export const MainWrapper = styled.div`
+    background: linear-gradient(to right, rgba(0,0,0,0.6), rgba(0,0,0,0.4));
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    position: relative;
+`
+
 export const Container = styled.div`
-    padding: 60px 10%;
+    padding: 100px 10%;
 `
 
 export const Map = styled.img`
     position: absolute;
     right: 10%;
-    top: 140px;
+    top: 150px;
 
     height: 280px;   
     width: 280px;   
@@ -23,6 +38,8 @@ export const Title = styled.h1`
     font-size: 50px;
     line-height: 55px;
     margin-bottom: 40px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
 
     @media (max-width: 800px) {
         font-size: 40px;
@@ -33,7 +50,9 @@ export const Label = styled.p`
     font-size: 16px;
     margin-bottom: 20px;
     margin-top: 60px;
-    color: #333;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(0,0,0,0.2);
 
     @media (max-width: 800px) {
         margin-bottom: 10px;

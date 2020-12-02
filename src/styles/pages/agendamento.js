@@ -31,8 +31,9 @@ export const Row = styled.div`
 
     margin-top: 20px;
 
-    > button {
+    > a {
         margin-right: 20px;
+        text-decoration: none;
     }
 `
 
@@ -47,62 +48,32 @@ export const Column = styled.div`
     }  
 `
 
-export const Divider = styled.div`
-    width: 100;
-    background: #ddd;
-    height: 1px;
+export const AlertBox = styled.div`
+    width: 600px;
+    background: #fafafa;
+    padding: 40px;
     margin: 60px 0;
-`
+    border-radius: 20px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.2);
 
-export const Form = styled.form`
-    
-`
+    > div:first-child {
+        margin-bottom: 40px;
+        margin-top: 0;
 
-export const FormRow = styled.div`
-    display: flex;
-    flex-direction: row;
-
-    @media (max-width: 800px) {
-        flex-direction: column;
-    }   
-`
-
-export const InputGroup = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    margin-bottom: 30px;
-
-    > div select, > div, >div input {
-        width: 350px;
-    }
-
-    @media (max-width: 800px) {
-        > div select, > div, > div input {
-            width: 100%;
+        svg {
+            flex: none;
         }
     }
+
+    @media (max-width: 800px) {
+        width: 100%;
+    }
 `
 
-export const Label = styled.label`
+export const AlertMessage = styled.p`
     font-size: 16px;
-    color: #111;
-    font-weight: 700;
-    margin-bottom: 10px;
-`
-
-export const CalendarInfo = styled.div`
-    width: 350px;
-    height: 100px;
-    background: #f1f1f1;
-    padding: 20px;
-    font-size: 14px;
     color: #555;
-`
-
-export const Box = styled.div`
-    width: 350px;
-    margin-bottom: 40px;
+    margin-left: 20px;
 
     @media (max-width: 800px) {
         width: 100%;

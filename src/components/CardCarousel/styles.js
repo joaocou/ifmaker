@@ -43,6 +43,10 @@ export const Title = styled.h3`
     font-family: 'Poppins', sans-serif;
     font-size: 36px;
     margin-bottom: 30px;
+
+    @media (max-width: 800px) {
+        font-size: 30px;
+    }
 `
 
 export const Row = styled.div`

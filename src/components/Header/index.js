@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import { Menu, X } from 'react-feather'
-import Link from 'next/link'
 
 import { Container, Logo, List, Item, IconLink } from './styles'
 
@@ -10,12 +9,12 @@ function Header({ transparent }) {
     const [menuOpen, setMenuOpen] = useState(true);
 
     useEffect(() => {
-        setMenuOpen(window.innerWidth > 900);
+        setMenuOpen(window.innerWidth > 1000);
         setLoading(false);
     }, []);
 
     const handleNavigation = () => {
-        if (window.innerWidth < 900) {
+        if (window.innerWidth < 1000) {
             setMenuOpen(false);
         }
     }

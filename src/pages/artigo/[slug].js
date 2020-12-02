@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import Head from 'next/head'
 
 import Header from '../../components/Header'
@@ -32,7 +32,8 @@ export default function Artigo ({ slug }) {
         <div>
             <Head>
                 <title>{data.title} | IF Maker</title>
-                <meta name="description" content={data.content}/>
+                <meta name="description" content={data.content.split(0,40)}/>
+                <meta property="og:image" content={data.image} />
             </Head>
 
             <Header />

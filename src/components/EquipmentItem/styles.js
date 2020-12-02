@@ -23,7 +23,7 @@ export const Square = styled.div`
 
 export const Title = styled.h3`
     font-size: 18px;
-    width: 260px;
+    max-width: 260px;
     margin-left: 60px;
 
     font-weight: 700;
@@ -35,6 +35,7 @@ export const Title = styled.h3`
 
     @media (max-width: 800px) {
         width: 100%;
+        font-size: 14px;
     }
 `
 
